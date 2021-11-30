@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/script.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e367b28ca4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Applications</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat+Alternates"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Frontend Applications</h1>
+        <ul>
+          <li>
+            <a href="/"><i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href="/grafiek"><i class="fas fa-chart-bar"></i></a>
+          </li>
+          <li>
+            <a href="/plaatsen"><i class="fas fa-city"></i></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/muhammet075/FrontendApplications"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </header>
+      <main><%- body %></main>
+      <footer>
+        <p>
+          Muhammet Kömür - 500828833 - Information Design - Frontend
+          Applications
+        </p>
+      </footer>
+    </div>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 500,
+        easing: "ease-in-quad",
+        delay: 100,
+      });
+    </script>
+  </body>
+</html>
