@@ -7,6 +7,7 @@ Frontend Applications
 * Express
 * Express-EJS-Layouts
 * EJS
+* D3 Data-Driven Documents
 * AOS.JS
 * Font-Awesome
 * Google Fonts
