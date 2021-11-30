@@ -2,6 +2,16 @@
 Frontend Applications
 <br/>
 
+## Dependencies
+* NodeJS
+* Express
+* Express-EJS-Layouts
+* EJS
+* AOS.JS
+* Font-Awesome
+* Google Fonts
+<br/>
+
 ## Installeren
 1. Clone de repository<br/>
 ```
@@ -22,17 +32,6 @@ Frontend Applications
 ```
   npm start
 ```
-<br/>
-
-
-## Dependencies
-* NodeJS
-* Express
-* Express-EJS-Layouts
-* EJS
-* AOS.JS
-* Font-Awesome
-* Google Fonts
 <br/>
 
 ## Wiki
