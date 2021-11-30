@@ -1,4 +1,4 @@
-# FrontendApplications
+# Frontend Applications
 Voor dit vak heb ik NodeJS met Express als framework en met EJS als templating language gewerkt.<br/><br/>
 
 ## Dependencies
