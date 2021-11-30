@@ -3,7 +3,8 @@ Frontend Applications
 <br/><br/>
 
 ## Dependencies
-* NodeJS
+* NodeJS <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
+"/>
 * Express
 * Express-EJS-Layouts
 * EJS
