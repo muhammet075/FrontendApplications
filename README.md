@@ -32,7 +32,7 @@ Frontend Applications
 ```
   npm start
 ```
-<br/><br/>
+<br/>
 
 ## Wiki
 Lees de <a href="https://github.com/muhammet075/FrontendApplications/wiki">wiki</a> voor meer informatie over de app 📖
