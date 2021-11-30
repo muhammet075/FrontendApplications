@@ -1,0 +1,108 @@
+<article id="grafiekNL">
+  <h2>Inwoners Nederland</h2>
+  <section class="filter">
+    <label>
+      <input type="checkbox" id="FilterJaren" />
+      Laatste 10 jaar
+    </label>
+  </section>
+</article>
+
+<div class="infotekst">
+  <p>Jaren <i class="fas fa-long-arrow-alt-right"></i></p>
+  <p>x aantal miljoen <i class="fas fa-long-arrow-alt-right"></i></p>
+</div>
+
+<script type="text/javascript">
+  //met EJS wordt de data uit de API toegevoegd in de array
+      const dataNederland = [
+          <%for (i = 20; i < inwoners.length; i++) {%>
+            { inwoners: <%= inwoners[i] %>, jaar: <%= nieuwData[i].year %> },
+          <%}%>
+        ];
+
+        console.log(dataNederland)
+
+    //groottes van de margin width en height definieren
+    const margin = { top: 80, bottom: 0, left: 150, right: 0 };
+    const width = 1000 - (margin.left - margin.right);
+    const height = 1000 - (margin.top - margin.bottom);
+
+    //element selecteren svg aanmaken
+    const svg = d3
+      .select("#grafiekNL")
+      .append("svg")
+      .data(dataNederland.sort((a, b) => d3.descending(a.inwoners, b.inwoners)))
+      .attr("width", width + (margin.left + margin.right))
+      .attr("height", height + (margin.top + margin.bottom));
+
+    // margin toevoege
+    const g = svg
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    // x en y schalen
+    const xscale = d3.scaleLinear().range([width - margin.left, margin.right]);
+
+    const yscale = d3
+      .scaleBand()
+      .domain([16, 17])
+      .paddingInner(0.3)
+      .range([margin.bottom, height - margin.top]);
+
+
+    // axis toevegen en charts en labels
+    const xaxis = d3.axisTop().scale(xscale);
+    const g_xaxis = g.append("g").attr("class", "axis");
+    const yaxis = d3.axisLeft().scale(yscale);
+    const g_yaxis = g.append("g").attr("class", "axis");
+
+    update(dataNederland);
+
+
+    function update(new_data) {
+      //scales/domeinen updaten
+      xscale.domain([d3.max(new_data, (d) => d.inwoners), 13]);
+      yscale.domain(new_data.map((d) => d.jaar));
+
+      //axis displayen
+      g_xaxis.transition().call(xaxis);
+      g_yaxis.transition().call(yaxis);
+
+
+      // de juiste jaartallen toevoegen aan de juiste inwoner aantal
+      const rect = g
+        .selectAll("rect")
+        .data(new_data, (d) => d.jaar)
+        .join(
+          // rect en x toevegen
+          (enter) => {
+            const rect_enter = enter.append("rect").attr("x", 0);
+            return rect_enter;
+          },
+        );
+
+      // oude en nieuwe elementen enteren
+      rect
+        .transition()
+        .attr("height", yscale.bandwidth())
+        .attr("width", (d) => xscale(d.inwoners))
+        .attr("y", (d) => yscale(d.jaar));
+        rect.select("title").text((d) => d.jaar);
+    }
+
+    // checkbox
+    d3.select("#FilterJaren").on("change", function () {
+
+      const checked = d3.select(this).property("checked");
+      if (checked === true) {
+
+        // inwoners onder 16.4 miljoen verdwijnen
+        const filtered_data = dataNederland.filter((d) => d.inwoners > 16.4);
+
+        return update(filtered_data);
+      }
+      update(dataNederland);
+      //alle data terug updaten
+    });
+</script>

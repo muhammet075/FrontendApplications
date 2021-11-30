@@ -1,0 +1,17 @@
+<article id="wrapper">
+  <h2>Alle plaatsen in Nederland</h2>
+  <section class="plaatsen">
+    <ul>
+      <%for (i = 20; i < stedenArray.length; i++) {%>
+      <li>
+        <a
+          href="https://nl.wikipedia.org/wiki/<%= stedenArray[i] %>"
+          target="_blank"
+          data-aos="zoom-in"
+          ><i class="fas fa-city"></i> <%= stedenArray[i] %></a
+        >
+      </li>
+      <%}%>
+    </ul>
+  </section>
+</article>
