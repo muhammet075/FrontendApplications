@@ -36,11 +36,13 @@ Frontend Applications
 
 ## Wiki
 Lees de <a href="https://github.com/muhammet075/FrontendApplications/wiki">wiki</a> voor meer informatie over de app 📖
-<br/>
+<br/><br/>
+
 
 ## Autheur
 De autheur van deze app is <a href="https://github.com/muhammet075">Muhammet Kömür</a> ✍️
-<br/>
+<br/><br/>
+
 
 ## License
 Dit project heeft een <a href="https://github.com/muhammet075/FrontendApplications/blob/main/LICENSE">MIT</a> license ✅
