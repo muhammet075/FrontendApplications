@@ -1,6 +1,5 @@
 # FrontendApplications
-Frontend Applications
-<br/><br/>
+Voor dit vak heb ik NodeJS met Express als framework en met EJS als templating language gewerkt.<br/><br/>
 
 ## Dependencies
 * <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
