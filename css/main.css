@@ -1,0 +1,394 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+body {
+  background-color: rgb(239 239 239);
+  margin: 0 auto;
+}
+#app {
+  background-color: #ffff;
+  width: 1000px;
+}
+header {
+  background-color: #4278c7;
+  padding: 20px 10px 10px 10px;
+}
+header h1 {
+  color: #ffff;
+  font-weight: 100;
+  border-bottom: 1px solid #729cd9;
+  padding-bottom: 30px;
+}
+.index {
+  width: 40%;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.index h2,
+.index ul li {
+  text-align: left;
+}
+.index h2 {
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+
+#grafiekNL h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+header ul {
+  display: inline-flex;
+  padding: 10px;
+}
+header ul li {
+  margin: 0 40px;
+  font-size: 1.8em;
+}
+header ul li a {
+  color: #ffff;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 20px auto 40px auto;
+}
+#wrapper h2 {
+  margin: 20px auto 40px auto;
+}
+article {
+  display: grid;
+  justify-content: center;
+}
+article section:nth-child(1) {
+  margin-bottom: 100px;
+}
+article section:nth-child(2) {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+article section:nth-child(3) {
+  margin-top: 100px;
+}
+rect {
+  fill: #0057b9;
+  fill-opacity: 0.8;
+}
+rect:hover {
+  fill-opacity: 1;
+}
+.axis {
+  font-size: smaller;
+}
+.filter {
+  margin-bottom: 10px;
+}
+.infotekst {
+  position: relative;
+  color: #0057b9;
+}
+.infotekst p:first-child {
+  position: absolute;
+  top: -700px;
+  left: 50px;
+  transform: rotate(270deg);
+}
+.infotekst p:last-child {
+  position: absolute;
+  top: -975px;
+  left: 190px;
+}
+.plaatsen ul li {
+  text-align: left;
+  height: 50px;
+  margin-right: 60px;
+  display: inline-block;
+}
+.plaatsen ul li a {
+  color: #0057b9;
+  text-decoration: none;
+  font-family: "Montserrat Alternates";
+}
+footer {
+  background-color: #4278c7;
+  padding: 10px;
+}
+footer p {
+  color: #ffff;
+  font-weight: 100;
+}
+.svgoefening {
+  background-color: #000;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 20px;
+  padding: 20px;
+}
+.svgoefening rect {
+  fill-opacity: 1;
+}
+.svg1,
+.svg2,
+.svg3,
+.svg4,
+.svg5 {
+  margin-bottom: 20px;
+}
+.svg1 svg {
+  background-color: #e30a17;
+}
+.svg1 polygon {
+  fill: #ffff;
+  transform: scale(0.7, 0.7) translate(74%, 50%) rotate(345deg);
+}
+.svg2 svg rect:nth-child(1) {
+  fill: red;
+}
+.svg2 svg rect:nth-child(2) {
+  fill: #fff;
+}
+.svg2 svg rect:nth-child(3) {
+  fill: #00f;
+}
+.svg3 svg {
+  background-color: red;
+}
+.svg3 svg rect:nth-child(1) {
+  fill: #0000cd;
+}
+.svg3 svg rect:nth-child(6) {
+  fill: green;
+}
+.svg3 .ster1 {
+  transform: scale(0.7, 0.7) translate(67%, 60%) rotate(345deg);
+  fill: #ffff;
+}
+.svg3 .ster2 {
+  transform: scale(0.7, 0.7) translate(71%, 53%) rotate(17deg);
+  fill: #ffff;
+}
+.svg4 svg {
+  background-color: #ffff;
+}
+.svg4 circle {
+  fill: #e30a17;
+}
+.svg5 svg {
+  background-color: #00f;
+}
+.svg5 svg rect:nth-child(1) {
+  width: 100%;
+  height: 40px;
+  fill: #ff0;
+}
+.svg5 svg rect:nth-child(2) {
+  height: 100%;
+  width: 40px;
+  fill: #ff0;
+}
+.svg6 svg {
+  background-color: red;
+}
+.svg6 svg rect:nth-child(1) {
+  width: 50%;
+  height: 50px;
+  fill: #ffff;
+}
+.svg6 svg rect:nth-child(2) {
+  height: 73%;
+  width: 56px;
+  fill: #ffff;
+}
+.favorietdatums {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  background-color: #000;
+  padding: 20px;
+}
+.favorietdatums h1 {
+  margin-bottom: 0;
+  color: #9de6ff;
+}
+.favorietdatums h2 {
+  margin-top: 0;
+  font-weight: 300;
+  color: #9de6ff;
+}
+.favorietdatums p {
+  position: absolute;
+  top: 590px;
+  font-size: 16px;
+  color: #9de6ff;
+}
+.favorietdatums text {
+  fill: #000;
+}
+.favorietdatums svg {
+  border-bottom: 3px solid #076f93;
+  border-left: 3px solid #076f93;
+  margin: 20px 50px;
+}
+.favorietdatums svg g circle {
+  fill: #000;
+}
+.favorietdatums svg g text {
+  fill: #9de6ff;
+  font-weight: 400;
+  text-anchor: middle;
+}
+.favorietdatums svg g text:nth-child(35) {
+  transform: translate(0, 14%);
+}
+.favorietdatums svg g text:nth-child(36) {
+  transform: translate(0, 49%);
+}
+.favorietdatums svg g text:nth-child(37) {
+  transform: translate(0, 54%);
+}
+.favorietdatums svg g text:nth-child(38) {
+  transform: translate(0, 83%);
+}
+.favorietdatums svg g text:nth-child(39) {
+  transform: translate(0, 74%);
+}
+.favorietdatums svg g text:nth-child(40) {
+  transform: translate(0, 11%);
+}
+.favorietdatums svg g text:nth-child(41) {
+  transform: translate(0, 32%);
+}
+.favorietdatums svg g text:nth-child(42) {
+  transform: translate(0, 44%);
+}
+.favorietdatums svg g text:nth-child(43) {
+  transform: translate(0, 19%);
+}
+.favorietdatums svg g text:nth-child(44) {
+  transform: translate(0, 40%);
+}
+.favorietdatums svg g text:nth-child(45) {
+  transform: translate(0, 63%);
+}
+.favorietdatums svg g text:nth-child(46) {
+  transform: translate(0, -7%);
+}
+.favorietdatums svg g text:nth-child(47) {
+  transform: translate(0, 33%);
+}
+.favorietdatums svg g text:nth-child(48) {
+  transform: translate(0, 40%);
+}
+.favorietdatums svg g text:nth-child(49) {
+  transform: translate(0, 19%);
+}
+.favorietdatums svg g text:nth-child(50) {
+  transform: translate(0, 22%);
+}
+.favorietdatums svg g text:nth-child(51) {
+  transform: translate(0, 9%);
+}
+.favorietdatums svg g text:nth-child(52) {
+  transform: translate(0, 1%);
+}
+.favorietdatums svg g text:nth-child(53) {
+  transform: translate(0, 47%);
+}
+.favorietdatums svg g text:nth-child(54) {
+  transform: translate(0, 80%);
+}
+.favorietdatums svg g text:nth-child(55) {
+  transform: translate(0, 5%);
+}
+.favorietdatums svg g text:nth-child(56) {
+  transform: translate(0, 25%);
+}
+.favorietdatums svg g text:nth-child(57) {
+  transform: translate(0, 67%);
+}
+.favorietdatums svg g text:nth-child(58) {
+  transform: translate(0, 10%);
+}
+.favorietdatums svg g text:nth-child(59) {
+  transform: translate(0, 30%);
+}
+.favorietdatums svg g text:nth-child(60) {
+  transform: translate(0, 20%);
+}
+.favorietdatums svg g text:nth-child(61) {
+  transform: translate(0, 19%);
+}
+.favorietdatums svg g text:nth-child(62) {
+  transform: translate(0, 59%);
+}
+.favorietdatums svg g text:nth-child(63) {
+  transform: translate(0, 74%);
+}
+.favorietdatums svg g text:nth-child(64) {
+  transform: translate(0, 53%);
+}
+.favorietdatums svg g text:nth-child(65) {
+  transform: translate(0, 4%);
+}
+.favorietdatums .favorietdatums svg g text:nth-child(66) {
+  transform: translate(0, 72%);
+}
+.favorietdatums svg g text:nth-child(67) {
+  transform: translate(0, 55%);
+}
+.favorietdatums svg g text:nth-child(68) {
+  transform: translate(0, 20%);
+}
+.hoofdletter {
+  text-transform: capitalize;
+}
+.datumsverschonen .dataLijst {
+  width: 50%;
+  padding: 20px;
+  margin: auto;
+}
+.datumsverschonen .dataLijst li {
+  padding: 4px 5px;
+}
+.datumsverschonen .dataLijst li:nth-child(even) {
+  background-color: #ddd;
+}
+.datumsverschonen .dataLijst li::after {
+  content: "";
+  background-color: #ffff;
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 15px;
+  margin-top: 8px;
+  margin-left: 215px;
+}
+.datumsverschonen #tekst {
+  display: none;
+}
+.huisdiernamen .dataLijst {
+  width: 30%;
+  padding: 20px;
+  margin: auto;
+}
+.huisdiernamen .dataLijst li {
+  padding: 4px 5px;
+}
+.huisdiernamen .dataLijst li:nth-child(even) {
+  background-color: #ddd;
+}
+.huisdiernamen .dataLijst li::before {
+  content: "";
+  background-color: #ffff;
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 15px;
+  margin-top: 29px;
+  margin-left: 120px;
+}
