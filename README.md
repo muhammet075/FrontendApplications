@@ -44,4 +44,4 @@ De autheur van deze app is <a href="https://github.com/muhammet075">Muhammet Kö
 <br/><br/>
 
 ## License
-Dit project heeft een <a href="https://github.com/muhammet075/FrontendApplications/blob/main/LICENSE">MIT</a> license <img src="https://img.shields.io/github/license/muhammet075/FrontendApplications?style=social"/>
+Dit project heeft een <a href="https://github.com/muhammet075/FrontendApplications/blob/main/LICENSE">MIT</a> license <img src="https://img.shields.io/github/license/muhammet075/FrontendApplications?style=plastic"/>
