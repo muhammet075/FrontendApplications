@@ -2,6 +2,7 @@
 Frontend Applications
 
 ## Dependencies
+* NodeJS
 * Express
 * Express-EJS-Layouts
 * EJS
