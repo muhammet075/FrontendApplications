@@ -133,77 +133,84 @@ footer p {
 .svgoefening rect {
   fill-opacity: 1;
 }
-.svg1,
-.svg2,
-.svg3,
-.svg4,
-.svg5 {
+.svgoefening .svg1,
+.svgoefening .svg2,
+.svgoefening .svg3,
+.svgoefening .svg4,
+.svgoefening .svg5 {
   margin-bottom: 20px;
 }
-.svg1 svg {
+.svgoefening .svg1 svg {
   background-color: #e30a17;
 }
-.svg1 polygon {
+.svgoefening .svg1 polygon {
   fill: #ffff;
   transform: scale(0.7, 0.7) translate(74%, 50%) rotate(345deg);
 }
-.svg2 svg rect:nth-child(1) {
+.svgoefening .svg2 svg rect:nth-child(1) {
   fill: red;
 }
-.svg2 svg rect:nth-child(2) {
+.svgoefening .svg2 svg rect:nth-child(2) {
   fill: #fff;
+  transform: scale(1, 1) translate(0%, 33%);
 }
-.svg2 svg rect:nth-child(3) {
+.svgoefening .svg2 svg rect:nth-child(3) {
   fill: #00f;
+  transform: scale(1, 1) translate(0%, 66%);
 }
-.svg3 svg {
+.svgoefening .svg3 svg {
   background-color: red;
 }
-.svg3 svg rect:nth-child(1) {
+.svgoefening .svg3 svg rect:nth-child(1) {
   fill: #0000cd;
 }
-.svg3 svg rect:nth-child(6) {
+.svgoefening .svg3 svg rect:nth-child(6) {
   fill: green;
+  transform: scale(1, 1) translate(0%, 67%);
 }
-.svg3 .ster1 {
+.svgoefening .svg3 .ster1 {
   transform: scale(0.7, 0.7) translate(67%, 60%) rotate(345deg);
   fill: #ffff;
 }
-.svg3 .ster2 {
+.svgoefening .svg3 .ster2 {
   transform: scale(0.7, 0.7) translate(71%, 53%) rotate(17deg);
   fill: #ffff;
 }
-.svg4 svg {
+.svgoefening .svg4 svg {
   background-color: #ffff;
 }
-.svg4 circle {
+.svgoefening .svg4 circle {
   fill: #e30a17;
 }
-.svg5 svg {
+.svgoefening .svg5 svg {
   background-color: #00f;
 }
-.svg5 svg rect:nth-child(1) {
+.svgoefening .svg5 svg rect:nth-child(1) {
   width: 100%;
   height: 40px;
   fill: #ff0;
+  transform: scale(1, 1) translate(0%, 40%);
 }
-.svg5 svg rect:nth-child(2) {
+.svgoefening .svg5 svg rect:nth-child(2) {
   height: 100%;
   width: 40px;
   fill: #ff0;
+  transform: scale(1, 1) translate(25%, 0%);
 }
-.svg6 svg {
+.svgoefening .svg6 svg {
   background-color: red;
 }
-.svg6 svg rect:nth-child(1) {
+.svgoefening .svg6 svg rect:nth-child(1) {
   width: 50%;
   height: 50px;
   fill: #ffff;
+  transform: scale(1, 1) translate(23%, 40%);
 }
-.svg6 svg rect:nth-child(2) {
+.svgoefening .svg6 svg rect:nth-child(2) {
   height: 73%;
   width: 56px;
   fill: #ffff;
+  transform: scale(1, 1) translate(40%, 15%);
 }
 .favorietdatums {
   font-family: "Helvetica Neue", sans-serif;
