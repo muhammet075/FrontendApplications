@@ -39,7 +39,7 @@ Lees de <a href="https://github.com/muhammet075/FrontendApplications/wiki">wiki<
 <br/><br/>
 
 ## Autheur
-De autheur van deze app is <a href="https://github.com/muhammet075">Muhammet Kömür</a> ✍️
+De auteur van deze app is <a href="https://github.com/muhammet075">Muhammet Kömür</a> ✍️
 <br/><br/>
 
 ## License
