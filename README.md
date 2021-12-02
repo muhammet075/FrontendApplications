@@ -12,6 +12,11 @@ Voor dit vak heb ik NodeJS met Express als framework en met EJS als templating l
 * Google Fonts
 <br/>
 
+## Dataset
+Met de data die ik verwerkt heb in de app heb ik opgehaald met de API van https://countriesnow.space/.<br/>
+- "https://countriesnow.space/api/v0.1/countries/population"
+<br/><br/>
+
 ## Installeren
 1. Clone de repository<br/>
 ```
