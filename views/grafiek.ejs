@@ -42,19 +42,19 @@
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
     // x en y schalen
-    const xscale = d3.scaleLinear().range([width - margin.left, margin.right]);
+    const xschaal = d3.scaleLinear().range([width - margin.left, margin.right]);
 
-    const yscale = d3
+    const yschaal = d3
       .scaleBand()
-      .domain([16, 17])
+      .domain([13, 17])
       .paddingInner(0.3)
       .range([margin.bottom, height - margin.top]);
 
 
     // axis toevegen en charts en labels
-    const xaxis = d3.axisTop().scale(xscale);
+    const xaxis = d3.axisTop().scale(xschaal);
     const g_xaxis = g.append("g").attr("class", "axis");
-    const yaxis = d3.axisLeft().scale(yscale);
+    const yaxis = d3.axisLeft().scale(yschaal);
     const g_yaxis = g.append("g").attr("class", "axis");
 
     update(dataNederland);
@@ -62,8 +62,8 @@
 
     function update(new_data) {
       //scales/domeinen updaten
-      xscale.domain([d3.max(new_data, (d) => d.inwoners), 13]);
-      yscale.domain(new_data.map((d) => d.jaar));
+      xschaal.domain([d3.max(new_data, (d) => d.inwoners), 13]);
+      yschaal.domain(new_data.map((d) => d.jaar));
 
       //axis displayen
       g_xaxis.transition().call(xaxis);
@@ -85,9 +85,9 @@
       // oude en nieuwe elementen enteren
       rect
         .transition()
-        .attr("height", yscale.bandwidth())
-        .attr("width", (d) => xscale(d.inwoners))
-        .attr("y", (d) => yscale(d.jaar));
+        .attr("height", yschaal.bandwidth())
+        .attr("width", (d) => xschaal(d.inwoners))
+        .attr("y", (d) => yschaal(d.jaar));
         rect.select("title").text((d) => d.jaar);
     }
 
@@ -98,9 +98,9 @@
       if (checked === true) {
 
         // inwoners onder 16.4 miljoen verdwijnen
-        const filtered_data = dataNederland.filter((d) => d.inwoners > 16.4);
+        const gefilterd = dataNederland.filter((d) => d.inwoners > 16.4);
 
-        return update(filtered_data);
+        return update(gefilterd);
       }
       update(dataNederland);
       //alle data terug updaten
