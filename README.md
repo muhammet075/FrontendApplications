@@ -20,8 +20,8 @@ Met de data die ik verwerkt heb in de app heb ik opgehaald met de API van https:
 
 ### Screenshot D3 Visualisatie met de API
 <img src="https://i.ibb.co/gTFk7dp/Schermafbeelding-2021-12-02-om-13-33-50.png" alt="screen" width="400px"/>
+<br/>
 
-<br/><br/>
 ## Installeren ⚙️
 1. Clone de repository<br/>
 ```
