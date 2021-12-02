@@ -38,14 +38,14 @@ Met de data die ik verwerkt heb in de app heb ik opgehaald met de API van https:
   npm install
 ```
 
-4. Start de app 🚀<br/>
+4. Start de app<br/>
 ```
   npm start
 ```
 <br/>
 
 ## Wiki 📖
-Lees de <a href="https://github.com/muhammet075/FrontendApplications/wiki">wiki</a> voor meer informatie over de app 📖
+Lees de <a href="https://github.com/muhammet075/FrontendApplications/wiki">wiki</a> voor meer informatie over de apo.
 <br/><br/>
 
 ## Deployment 🚀
@@ -53,7 +53,7 @@ Bekijk de app live op https://frontendapplications.herokuapp.com/
 <br/><br/>
 
 ## Autheur 🖊
-De auteur van deze app is <a href="https://github.com/muhammet075">Muhammet Kömür</a> ✍️
+De auteur van deze app is <a href="https://github.com/muhammet075">Muhammet Kömür</a> 
 <br/><br/>
 
 ## License ✅
